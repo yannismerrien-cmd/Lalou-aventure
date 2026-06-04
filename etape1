@@ -1,0 +1,40 @@
+<section id="etape1" style="padding:60px 20px;text-align:center;">
+
+<h2>🧩 Étape 1</h2>
+
+<p>
+Pour commencer cette aventure,
+tu devras retrouver un lieu où nous allons partager
+un moment rempli de défis, de rires et parfois de mauvaise foi...
+</p>
+
+<p>
+Indice :
+<br><br>
+🎳 Je suis un lieu où les boules roulent,
+où les quilles tombent,
+et où la compétition peut commencer.
+</p>
+
+<input
+id="reponse1"
+placeholder="Ta réponse..."
+style="
+padding:12px;
+width:250px;
+border-radius:10px;
+border:none;
+margin-top:20px;
+">
+
+<br><br>
+
+<button
+onclick="verifierEtape1()"
+class="btn">
+Valider
+</button>
+
+<p id="message1"></p>
+
+</section>
