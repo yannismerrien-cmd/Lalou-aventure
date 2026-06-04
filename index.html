@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lalou Aventure ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#0f172a,#1e293b);
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.photo{
+width:280px;
+height:280px;
+border-radius:20px;
+object-fit:cover;
+box-shadow:0 0 30px rgba(255,255,255,.3);
+animation:fadeIn 2s ease;
+}
+
+h1{
+margin-top:25px;
+font-size:2.5rem;
+}
+
+.subtitle{
+margin-top:15px;
+font-size:1.2rem;
+max-width:700px;
+line-height:1.6;
+}
+
+.btn{
+margin-top:40px;
+padding:15px 30px;
+border:none;
+border-radius:999px;
+background:#ec4899;
+color:white;
+font-size:1.1rem;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.map{
+padding:80px 20px;
+text-align:center;
+}
+
+.map h2{
+margin-bottom:40px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.step{
+background:#334155;
+padding:25px;
+border-radius:15px;
+cursor:pointer;
+transition:.3s;
+}
+
+.step:hover{
+transform:translateY(-5px);
+}
+
+.locked{
+opacity:.4;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<img src="couple.jpg" class="photo">
+
+<h1>Laloustar ❤️</h1>
+
+<p class="subtitle">
+Il y a 7 ans commençait la plus belle aventure de ma vie.
+
+Aujourd'hui, pour célébrer ces 7 années ensemble,
+je t'ai préparé une aventure rien que pour toi.
+</p>
+
+<button class="btn" onclick="scrollToMap()">
+Commencer l'aventure
+</button>
+
+</section>
+
+<section class="map" id="map">
+
+<h2>🗺️ Carte de l'aventure</h2>
+
+<div class="steps">
+
+<div class="step">
+Étape 1
+</div>
+
+<div class="step locked">
+Étape 2
+</div>
+
+<div class="step locked">
+Étape 3
+</div>
+
+<div class="step locked">
+Étape 4
+</div>
+
+<div class="step locked">
+Étape 5
+</div>
+
+<div class="step locked">
+Étape 6
+</div>
+
+<div class="step locked">
+Étape 7 🎁
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function scrollToMap(){
+document
+.getElementById("map")
+.scrollIntoView({
+behavior:"smooth"
+});
+}
+
+</script>
+
+</body>
+</html>
