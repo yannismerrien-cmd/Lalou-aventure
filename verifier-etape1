@@ -1,0 +1,29 @@
+<script>
+
+function verifierEtape1(){
+
+let reponse =
+document
+.getElementById("reponse1")
+.value
+.toLowerCase();
+
+if(
+reponse.includes("master")
+){
+
+document.getElementById("message1").innerHTML =
+"❤️ Bravo Laloustar ! Direction l'étape suivante.";
+
+document.querySelectorAll(".locked")[0]
+.classList.remove("locked");
+
+}else{
+
+document.getElementById("message1").innerHTML =
+"❌ Essaie encore.";
+}
+
+}
+
+</script>
